@@ -1,5 +1,5 @@
 // defining Backbone models
-Registration = Backbone.Model.extend({
+EventRegistration = Backbone.Model.extend({
     urlRoot: '/api/registration',
     defaults: {
         entry_date: new Date(),

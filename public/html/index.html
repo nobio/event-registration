@@ -14,10 +14,10 @@
             var count = document.getElementById('count').value;
 
             console.log(firstName + " " + lastName + " " + mail + " " + count);
-            //var reg = new Registration(); // Registration is a Backbone Model defined in backbone-models.js
-            new Registration().save({
-                'first-name': firstName,
-                'last-name': lastName,
+            // EventRegistration is a Backbone Model defined in backbone-models.js
+            new EventRegistration().save({
+                'firstName': firstName,
+                'lastName': lastName,
                 'mail': mail,
                 'count': count
             }, {

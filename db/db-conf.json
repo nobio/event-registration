@@ -1,0 +1,15 @@
+{
+  "mlab": {
+    "user": "evt-reg-node-app",
+    "password": "pxC-oMS-xQy-5JT",
+    "uri": "ds251727.mlab.com:51727/event-reg",
+    "options": {
+      "useMongoClient": true,
+      "reconnectTries": 1000,
+      "reconnectInterval": 500,
+      "poolSize": 5,
+      "keepAlive": 120,
+      "bufferMaxEntries": -1
+    }
+  }
+}

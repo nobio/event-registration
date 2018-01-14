@@ -8,6 +8,9 @@ var bodyParser = require("body-parser");
 var stylus = require("stylus");
 
 var api = require("./routes/api");
+// mongoose setup
+require('./db/db');
+
 
 var app = express();
 
@@ -41,6 +44,9 @@ app.delete("/api/registration/:id", api.deleteRegistration);
 app.get("/api/registration/:id", api.loadRegistration);
 app.get("/api/registration", api.loadAllRegistrations);
 
+/* ===================================================== */
+/*                     EXPRESS HANDLER                   */
+/* ===================================================== */
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error("Not Found");
